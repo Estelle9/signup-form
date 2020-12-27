@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 0em;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(./images/bg-intro-desktop.png) no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    font-size: 15px;
+    color: white;
+}
+
+input,
+span,
+a:link {
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4em 0;
+}
+
+.left-container,
+.container--purple,
+.container__form {
+    margin: 1.5em;
+}
+
+.container__form,
+.form input,
+#btn {
+    padding: 1.5em;
+}
+
+.left-container {
+    text-align: center;
+}
+
+.left-container h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+    padding-bottom: 1em;
+}
+
+.container--purple {
+    border: none;
+    border-radius: 0.5em;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 8px 2px -2px rgba(0, 0, 0, 0.30);
+    text-align: center;
+    padding: 1em 3em;
+    font-weight: 400;
+}
+
+.container__form {
+    border: none;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 0px 8px 2px -2px rgba(0, 0, 0, 0.30);
+}
+
+.form input {
+    border-radius: 0.5em;
+    width: 100%;
+    margin: 0.5em 0;
+    color: black;
+}
+
+#btn {
+    margin-top: 0.5em;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 0.5em;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(154, 59%, 51%);
+    transform: translateY(-3px);
+}
+
+:active#btn {
+    transform: translateY(0);
+}
+
+.disclaimer {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 1em;
+    padding: 0 2em;
+}
+
+a:link {
+    color: hsl(6, 78%, 57%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(6, 63%, 35%);
+}
+
+
+.error,
+#error-message {
+    display: none;
+    float: right;
+    margin-bottom: 1em;
+    font-size: 0.75em;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        height: 100%;
+    }
+
+    .left-container,
+    .right-container {
+        width: 40em;
+    }
+
+    .description h1 {
+        font-size: 3.5em;
+    }
+
+    .description p {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width:1024px) {
+    .left-container {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1250px) {
+    .left-container {
+        text-align: start;
+    }
+}
