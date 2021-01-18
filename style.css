@@ -11,7 +11,7 @@ body {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: url(./images/bg-intro-desktop.png) no-repeat;
+    background: url(./images/bg-intro-mobile.png) no-repeat;
     background-color: hsl(0, 100%, 74%);
     background-size: cover;
     font-size: 15px;
@@ -158,6 +158,11 @@ a:hover {
 }
 
 @media (min-width:1024px) {
+    body {
+        background: url(./images/bg-intro-desktop.png) no-repeat;
+        background-color: hsl(0, 100%, 74%);
+    }
+        
     .left-container {
         text-align: center;
     }
