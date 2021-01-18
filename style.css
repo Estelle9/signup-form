@@ -129,7 +129,7 @@ a:hover {
 
 .attribution {
     position: absolute;
-    bottom: 0;
+    bottom: -2em;
     font-size: 11px;
     text-align: center;
 }
