@@ -25,6 +25,7 @@ a:link {
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +119,6 @@ a:hover {
     color: hsl(6, 63%, 35%);
 }
 
-
 .error,
 #error-message {
     display: none;
@@ -127,6 +127,16 @@ a:hover {
     font-size: 0.75em;
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 @media (min-width: 768px) {
     .container {
