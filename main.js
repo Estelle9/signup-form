@@ -1,4 +1,4 @@
-const emailInput = document.getElementById("email-input");
+const emailInput = document.getElementById('email-input');
 const button = document.getElementById('btn');
 const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 const errorMessage = document.getElementById('error-message');
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else {
             errorMessage.style.display = 'none';
-            emailInput.style.background = '';
         }
     })
 });
